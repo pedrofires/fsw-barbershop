@@ -4,8 +4,6 @@ import { authOptions } from "../lib/auth";
 import { redirect } from "next/navigation";
 import { db } from "../lib/prisma";
 import BookingItem from "../_components/booking-item";
-import { isFuture } from "date-fns/isFuture";
-import { isPast } from "date-fns/isPast";
 
 const BookingsPage = async () => {
   const session = await getServerSession(authOptions);
